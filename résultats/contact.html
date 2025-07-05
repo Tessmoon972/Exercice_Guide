@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Office de Tourisme de Vernon</title>
+    <!-- Styles harmonisés -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Charger le composant Header -->
+    <script src="composants/header/header.js"></script>
+    <!-- Charger le composant Footer -->
+    <script src="composants/footer/footer.js"></script>
+</head>
+<body>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">Contactez-nous</h1>
+            <p class="contact-intro">
+                L'équipe de l'Office de Tourisme de Vernon est à votre disposition pour vous aider à organiser votre séjour et répondre à toutes vos questions.
+            </p>
+
+            <!-- Contact Grid -->
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Envoyez-nous un message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sujet">Sujet de votre demande</label>
+                            <select id="sujet" name="sujet">
+                                <option value="">Choisissez un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="visite">Organisation de visite</option>
+                                <option value="groupe">Visite de groupe</option>
+                                <option value="hebergement">Hébergement</option>
+                                <option value="restauration">Restauration</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Nos coordonnées</h2>
+                    
+                    <div class="info-item">
+                        <h3>📍 Adresse</h3>
+                        <p>Office de Tourisme de Vernon<br>
+                        36 rue Carnot<br>
+                        27200 Vernon, France</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📞 Téléphone</h3>
+                        <p>02 32 51 39 60</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>contact@vernon-tourisme.fr</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🕒 Horaires d'ouverture</h3>
+                        <p>
+                            <strong>Lundi - Samedi :</strong> 9h30 - 12h30 / 14h - 18h<br>
+                            <strong>Dimanche :</strong> 10h - 13h / 14h - 17h<br>
+                            <strong>Fermé :</strong> 1er janvier, 1er mai, 25 décembre
+                        </p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🌐 Réseaux sociaux</h3>
+                        <p>
+                            Facebook : @VernonTourisme<br>
+                            Instagram : @vernon_tourisme<br>
+                            Twitter : @Vernon_Tourism
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>Nous trouver</h2>
+                <div class="map-placeholder">
+                    <div>
+                        <p>🗺️ Carte interactive</p>
+                        <p>36 rue Carnot, 27200 Vernon</p>
+                        <p>Centre-ville de Vernon, proche de la gare SNCF</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Le footer sera chargé dynamiquement via composant/footer.js -->
+
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            // Simple validation
+            if (!data.nom || !data.prenom || !data.email || !data.message) {
+                alert('Veuillez remplir tous les champs obligatoires (*)');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                alert('Veuillez entrer une adresse email valide');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

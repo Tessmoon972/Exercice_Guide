@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations Pratiques - Vernon Tourisme</title>
+
+</head>
+<body>
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h1 class="page-title">Informations Pratiques</h1>
+            <p class="page-intro">
+                Toutes les informations essentielles pour préparer votre visite à Vernon et profiter pleinement de votre séjour en Normandie.
+            </p>
+
+            <!-- Info Grid -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-item-icon">📍</div>
+                    <h3>Localisation</h3>
+                    <p>Vernon se situe dans l'Eure, en Normandie, à seulement 45 minutes de Paris en train. Un cadre idéal pour une escapade culturelle au cœur de la vallée de la Seine.</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-item-icon">🕒</div>
+                    <h3>Horaires des Sites</h3>
+                    <p><strong>Haute saison (Avril-Octobre) :</strong><br>
+                    9h30 - 18h00<br>
+                    <strong>Basse saison (Novembre-Mars) :</strong><br>
+                    10h00 - 17h00<br>
+                    <strong>Fermés :</strong> 1er janvier, 1er mai, 25 décembre</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-item-icon">🎫</div>
+                    <h3>Tarifs</h3>
+                    <p><strong>Adulte :</strong> 8€<br>
+                    <strong>Étudiant/Senior :</strong> 6€<br>
+                    <strong>Enfant (-12 ans) :</strong> Gratuit<br>
+                    <strong>Pass Vernon :</strong> 15€<br>
+                    <em>Tarifs de groupe disponibles</em></p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-item-icon">🏨</div>
+                    <h3>Hébergement</h3>
+                    <p>Hôtels, chambres d'hôtes, gîtes ruraux et campings. Réservation conseillée en haute saison. Contactez l'office de tourisme pour nos recommandations.</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-item-icon">🍽️</div>
+                    <h3>Restauration</h3>
+                    <p>Restaurants traditionnels, brasseries, cafés et spécialités normandes. Découvrez les produits du terroir : cidre, calvados, fromages et pommes.</p>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-item-icon">🛍️</div>
+                    <h3>Shopping</h3>
+                    <p>Boutiques d'artisanat local, librairies, souvenirs et produits régionaux. Marché traditionnel le samedi matin place de la République.</p>
+                </div>
+            </div>
+
+            <!-- Transportation Section -->
+            <div class="transportation">
+                <div class="container">
+                    <h2>Comment venir à Vernon</h2>
+                    <div class="transport-grid">
+                        <div class="transport-item">
+                            <h3>🚗 En Voiture</h3>
+                            <ul>
+                                <li>Autoroute A13 sortie 16</li>
+                                <li>1h depuis Paris</li>
+                                <li>Parkings gratuits en centre-ville</li>
+                                <li>Aire de stationnement camping-cars</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <h3>🚂 En Train</h3>
+                            <ul>
+                                <li>Gare Paris Saint-Lazare</li>
+                                <li>Trajet : 45 minutes</li>
+                                <li>Trains toutes les heures</li>
+                                <li>Gare à 10 min à pied du centre</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <h3>🚌 En Bus</h3>
+                            <ul>
+                                <li>Réseau interurbain de l'Eure</li>
+                                <li>Lignes régulières</li>
+                                <li>Arrêts en centre-ville</li>
+                                <li>Tarifs préférentiels</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="transport-item">
+                            <h3>🚴 À Vélo</h3>
+                            <ul>
+                                <li>Piste cyclable Seine à Vélo</li>
+                                <li>Location de vélos disponible</li>
+                                <li>Parking vélos sécurisé</li>
+                                <li>Parcours balisés</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <div class="container">
+                    <h2>Localisation et Points d'Intérêt</h2>
+                    <p class="map-description">
+                        Découvrez Vernon et ses environs. La carte interactive vous permet de localiser les principaux sites touristiques, 
+                        l'office de tourisme, les parkings et les services pratiques.
+                    </p>
+                    <div id="map"></div>
+                </div>
+            </div>
+
+            <!-- Weather Section -->
+            <div class="weather">
+                <div class="container">
+                    <h2>Climat et Saisons</h2>
+                    <div class="weather-grid">
+                        <div class="weather-item">
+                            <h3>🌸 Printemps</h3>
+                            <p>Mars - Mai<br>
+                            Doux et fleuri<br>
+                            15-20°C<br>
+                            Idéal pour les jardins</p>
+                        </div>
+                        
+                        <div class="weather-item">
+                            <h3>☀️ Été</h3>
+                            <p>Juin - Août<br>
+                            Chaud et ensoleillé<br>
+                            20-25°C<br>
+                            Haute saison</p>
+                        </div>
+                        
+                        <div class="weather-item">
+                            <h3>🍂 Automne</h3>
+                            <p>Septembre - Novembre<br>
+                            Coloré et paisible<br>
+                            15-18°C<br>
+                            Moins de monde</p>
+                        </div>
+                        
+                        <div class="weather-item">
+                            <h3>❄️ Hiver</h3>
+                            <p>Décembre - Février<br>
+                            Frais et authentique<br>
+                            5-10°C<br>
+                            Charme hivernal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Le footer sera chargé dynamiquement via composant/footer.js -->
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet Map Script -->
+    <script>
+        let map;
+        let routingControl;
+
+        function initMap() {
+            // Coordonnées de Vernon
+            const vernon = [49.0942, 1.4844];
+            
+            // Initialisation de la carte Leaflet
+            map = L.map('map').setView(vernon, 14);
+
+            // Ajout des tuiles OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Icône personnalisée pour les marqueurs
+            const customIcon = L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="
+                    background: #e74c3c;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    font-weight: bold;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                    border: 2px solid white;
+                ">📍</div>`,
+                iconSize: [30, 30],
+                iconAnchor: [15, 15]
+            });
+
+            // Points d'intérêt
+            const attractions = [
+                {
+                    position: [49.0942, 1.4844],
+                    title: "Office de Tourisme",
+                    content: "<h3>Office de Tourisme de Vernon</h3><p>36 rue Carnot<br>27200 Vernon</p>"
+                },
+                {
+                    position: [49.0935, 1.4850],
+                    title: "Collégiale Notre-Dame",
+                    content: "<h3>Collégiale Notre-Dame</h3><p>Monument historique du XIe siècle</p>"
+                },
+                {
+                    position: [49.0920, 1.4830],
+                    title: "Vieux Moulin",
+                    content: "<h3>Vieux Moulin</h3><p>Monument emblématique du XVIe siècle</p>"
+                },
+                {
+                    position: [49.0945, 1.4835],
+                    title: "Château des Tourelles",
+                    content: "<h3>Château des Tourelles</h3><p>Vestiges de la forteresse médiévale</p>"
+                },
+                {
+                    position: [49.0938, 1.4860],
+                    title: "Musée A.G. Poulain",
+                    content: "<h3>Musée A.G. Poulain</h3><p>Art et histoire locale</p>"
+                },
+                {
+                    position: [49.0748, 1.5334],
+                    title: "Jardins de Giverny",
+                    content: "<h3>Jardins de Claude Monet</h3><p>À 5 km de Vernon</p>"
+                }
+            ];
+
+            // Ajout des marqueurs
+            attractions.forEach(attraction => {
+                const marker = L.marker(attraction.position, { icon: customIcon })
+                    .addTo(map)
+                    .bindPopup(attraction.content);
+            });
+
+            // Contrôles personnalisés pour l'itinéraire
+            const routeControl = L.control({ position: 'topleft' });
+            routeControl.onAdd = function(map) {
+                const div = L.DomUtil.create('div', 'route-control');
+                div.style.cssText = `
+                    background: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                    margin: 10px;
+                `;
+                
+                div.innerHTML = `
+                    <input type="text" id="route-input" placeholder="Entrez votre adresse de départ" style="
+                        width: 250px;
+                        padding: 8px;
+                        border: 2px solid #ddd;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    ">
+                    <br>
+                    <button id="route-button" style="
+                        padding: 8px 16px;
+                        background: #e74c3c;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 14px;
+                    ">🚗 Calculer l'itinéraire</button>
+                    <button id="clear-route" style="
+                        padding: 8px 16px;
+                        background: #95a5a6;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 14px;
+                        margin-left: 5px;
+                    ">🗑️ Effacer</button>
+                `;
+                
+                return div;
+            };
+            routeControl.addTo(map);
+
+            // Gestionnaires d'événements pour l'itinéraire
+            document.getElementById('route-button').addEventListener('click', calculateRoute);
+            document.getElementById('clear-route').addEventListener('click', clearRoute);
+            document.getElementById('route-input').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    calculateRoute();
+                }
+            });
+        }
+
+        function calculateRoute() {
+            const origin = document.getElementById('route-input').value;
+            if (!origin) {
+                alert('Veuillez entrer une adresse de départ');
+                return;
+            }
+
+            // Géocodage simple avec Nominatim (OpenStreetMap)
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(origin)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        const originCoords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+                        const destinationCoords = [49.0942, 1.4844]; // Vernon
+                        
+                        // Effacer l'itinéraire précédent
+                        clearRoute();
+                        
+                        // Créer une ligne simple entre les deux points
+                        const routeLine = L.polyline([originCoords, destinationCoords], {
+                            color: '#e74c3c',
+                            weight: 4,
+                            opacity: 0.7
+                        }).addTo(map);
+                        
+                        // Ajouter des marqueurs
+                        const startMarker = L.marker(originCoords)
+                            .addTo(map)
+                            .bindPopup('🚀 Départ: ' + origin);
+                        
+                        const endMarker = L.marker(destinationCoords)
+                            .addTo(map)
+                            .bindPopup('🎯 Arrivée: Vernon');
+                        
+                        // Ajuster la vue pour inclure l'itinéraire
+                        const group = L.featureGroup([routeLine, startMarker, endMarker]);
+                        map.fitBounds(group.getBounds().pad(0.1));
+                        
+                        // Stocker pour pouvoir effacer
+                        window.currentRoute = {
+                            line: routeLine,
+                            startMarker: startMarker,
+                            endMarker: endMarker
+                        };
+                        
+                        // Calculer la distance approximative
+                        const distance = map.distance(originCoords, destinationCoords);
+                        alert(`Itinéraire calculé ! Distance approximative: ${(distance / 1000).toFixed(1)} km`);
+                    } else {
+                        alert('Adresse non trouvée. Veuillez vérifier votre saisie.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erreur lors du géocodage:', error);
+                    alert('Erreur lors du calcul de l\'itinéraire.');
+                });
+        }
+
+        function clearRoute() {
+            if (window.currentRoute) {
+                map.removeLayer(window.currentRoute.line);
+                map.removeLayer(window.currentRoute.startMarker);
+                map.removeLayer(window.currentRoute.endMarker);
+                window.currentRoute = null;
+            }
+            document.getElementById('route-input').value = '';
+        }
+
+        // Initialisation de la carte au chargement
+        document.addEventListener('DOMContentLoaded', initMap);
+    </script>
+</body>
+</html>
