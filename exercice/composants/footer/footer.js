@@ -14,7 +14,7 @@ class FooterComponent {
     }
 
     loadFooter() {
-        fetch('')
+        fetch('composants/footer/footer.html')
             .then(response => response.text())
             .then(html => {
                 // Insérer le footer à la fin du body, avant les scripts
@@ -30,7 +30,7 @@ class FooterComponent {
 function loadFooterCSS() {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '';
+    link.href = 'composants/footer/footer.css';
     document.head.appendChild(link);
 }
 

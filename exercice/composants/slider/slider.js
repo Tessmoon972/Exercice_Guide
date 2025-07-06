@@ -90,7 +90,7 @@ function currentSlide(index) {
 
 // Fonction pour charger le slider
 function loadSlider() {
-    fetch('')
+    fetch('composants/slider/slider.html')
         .then(response => response.text())
         .then(html => {
             const heroSection = document.querySelector('.hero');
@@ -111,7 +111,7 @@ function loadSlider() {
 function loadSliderCSS() {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '';
+    link.href = 'composants/slider/slider.css';
     document.head.appendChild(link);
 }
 
